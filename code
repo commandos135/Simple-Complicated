@@ -1,0 +1,25 @@
+#include "stdafx.h"
+#include <iostream> 
+using namespace std;
+
+int main()
+{
+	int n;
+	bool f = true;
+	/////////////////////////////////////////
+	cout << " please enter n: " << endl;
+	cin >> n;
+
+	for (int i = 2; i < n; i++)
+	{
+		if (n%i == 0)
+			(f = false);
+	}
+	if (f == true)
+		cout << "somme is simple" << endl;
+	else
+		cout << "number is complicated" << endl;
+
+	system("pause");
+	return 0;
+}
